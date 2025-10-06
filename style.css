@@ -1,8 +1,8 @@
 
 :root {
-  --primary-color: #f8c291;
-  --secondary-color: #e17055;
-  --bg-color: #fff8f0;
+  --primary-color: lightblue;
+  --secondary-color:black;
+  --bg-color: white;
   --text-color: #333;
   --radius: 12px;
   --transition: all 0.3s ease;
@@ -28,7 +28,7 @@ header {
   align-items: center;
   background-color: var(--primary-color);
   padding: 15px 40px;
-  color: #fff;
+  color: black;
   flex-wrap: wrap;
 }
 
@@ -43,7 +43,7 @@ header {
 }
 
 .nav-links a {
-  color: #fff;
+  color: lightblue;
   text-decoration: none;
   font-weight: bold;
   position: relative;
@@ -57,7 +57,7 @@ header {
   left: 0;
   width: 0%;
   height: 2px;
-  background: #fff;
+  background: lightblue;
   transition: width 0.3s;
 }
 
@@ -73,7 +73,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color:black;
   padding: 20px;
 }
 
@@ -105,7 +105,7 @@ header {
 }
 
 .btn:hover {
-  background-color: #d35400;
+  background-color: lightblue;
 }
 
 
@@ -123,7 +123,7 @@ header {
 
 .Our Menu {
   padding: 60px 40px;
-  background-color: #fff;
+  background-color: lightblue;
   text-align: center;
 }
 
@@ -150,7 +150,7 @@ header {
 
 footer {
   background-color: var(--primary-color);
-  color: #fff;
+  color: black;
   padding: 20px;
 }
 
@@ -167,13 +167,13 @@ footer {
 }
 
 .footer-container a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   transition: var(--transition);
 }
 
 .footer-container a:hover {
-  color: #6d4c41;
+  color: blue;
 }
 
 
