@@ -1,0 +1,233 @@
+
+:root {
+  --primary-color: #f8c291;
+  --secondary-color: #e17055;
+  --bg-color: #fff8f0;
+  --text-color: #333;
+  --radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 15px 40px;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+.About us {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSMM9027LWAQp5KB3yitXwWaQy1zF5q5p8l5MhFcGbW9EeSU9VkowzMuTJVnlnz3cAVM&usqp=CAU') no-repeat center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.about us {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: var(--radius);
+}
+
+.about us h3 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.about us p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: #d35400;
+}
+
+
+.Our Menu {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.Our Menu h2 {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+
+.Our Menu {
+  padding: 60px 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.Our Menu {
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.Our Menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.Our Menu {
+  background: var(--bg-color);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  transition: var(--transition);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-container .socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-container a {
+  color: #fff;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-container a:hover {
+  color: #6d4c41;
+}
+
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .Our Menu{
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .About us {
+    height: 60vh;
+  }
+
+  .Our Menu {
+    padding: 20px;
+  }
+
+  .Our Menu {
+    font-size: 1.6rem;
+  }
+
+  .Contact us {
+    font-size: 1rem;
+  }
+
+  .Our Menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Contact us {
+    width: 90%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
